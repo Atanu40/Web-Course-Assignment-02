@@ -1,0 +1,180 @@
+/*---------------
+ import font
+-----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+
+* {
+    margin: 0px;
+    background-color: #FFF4E7;
+}
+
+header{
+    background-color: #FFF4E7;
+}
+
+
+
+/*-----------------------
+   HEADER OF NAV
+-------------------------*/
+
+.header-nav {
+    margin-top: 30px;
+}
+
+.header-nav-parrent {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav-child-parrent {
+    display: flex;
+    list-style: none;
+
+}
+
+.header-nav-child-parrent a {
+    text-decoration: none;
+    color: #424242;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+.header-nav-child-parrent li {
+    padding: 10px;
+}
+
+/*------------------------------
+   HEADER TITLE & HEADER BUTTON
+--------------------------------*/
+
+.header-title {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.header-title .header-title-01,
+.header-title-02 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+
+.header-title .header-title-03 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    width: 868px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-title .header-title-button {
+    margin-top: 20px;
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*---------------------------
+    HEADER BANNER
+-----------------------------    
+*/
+
+.header-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+.header-banner-container img {
+    width: 1440px;
+    height: 700px;
+    border-radius: 8px;
+    
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------
+
+    RESPONSIVE FOR MOBILE DEVICES 
+    
+---------------------------------    
+*/
+
+@media only screen and (max-width:480px) {
+    .header-nav-parrent {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav-child-parrent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 20px;
+
+
+    }
+
+    .header-title .header-title-01,
+    .header-title-02 {
+
+        text-align: center;
+    }
+
+    .header-title-02 {
+        width: 100%;
+    }
+
+    .header-title .header-title-03 {
+        width: 100%;
+
+    }
+
+    .header-banner-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        
+    
+    }
+
+}
